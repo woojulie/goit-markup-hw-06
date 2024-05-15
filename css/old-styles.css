@@ -326,9 +326,9 @@ body {
 }
 
 /* ============ PORTFOLIO STYLES ============ */
-.portfolio {
+.portfolio-main-header {
     font-weight: 700;
-    line-height: 1.11111;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
@@ -343,7 +343,6 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title {
-    font-family: "Roboto", sans-serif;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -393,12 +392,11 @@ body {
     transform: translateY(0%);
 }
 .portfolio-text {
-    font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /* ============ FOOTER STYLES ============ */
