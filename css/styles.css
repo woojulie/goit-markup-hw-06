@@ -54,11 +54,8 @@ body {
     overflow: hidden;
 }
 .container {
-    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: auto;
-    margin-left: auto;
 }
 .section-paddings {
     padding-top: 96px;
@@ -255,10 +252,10 @@ body {
 .contacts-nav {
     display: flex;
 }
-.comtacts {
+.contacts {
     display: flex;
-    gap: 12px;
     flex-direction: column;
+    gap: 12px;
 }
 .contacts-link {
     font-weight: 400;
@@ -280,6 +277,7 @@ body {
 @media screen and (min-width: 1158px) {
     .contacts {
         display: flex;
+        flex-direction: row;
         gap: 40px;
     }
 }
@@ -409,6 +407,10 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
+    .benefits {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
     .benefits-list {
         gap: 24px;
         flex-wrap: nowrap;
@@ -428,11 +430,17 @@ body {
         margin-bottom: 8px;
         }
     .benefits-svg-icons {
-            visibility: visible;
-            display: block;
+        visibility: visible;
+        display: block;
         }
+    .benefits-list-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
     .benefits-list-text {
             margin-bottom: 0px;
+            font-weight: 400;
         }
     }
 
@@ -440,6 +448,10 @@ body {
 /* ============ TEAM STYLES ============ */
 .team {
     background-color: #f4f4fd;
+}
+.team-info {
+padding-bottom: 32px;
+padding-top: 32px;
 }
 .team-list {
     display: flex;
@@ -484,13 +496,11 @@ body {
 }
 .icons {
     width: 100%;
-    margin-bottom: 32px;
 }
 .social-link-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-bottom: 32px;
 }
 
 .soc-link {
@@ -534,7 +544,10 @@ body {
     }
 }
 /* ============ PORTFOLIO STYLES ============ */
-
+.portfolio-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .portfolio-main-header {
     font-weight: 700;
     line-height: 1.1;
@@ -568,8 +581,6 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-left: 16px;
-    margin-top: 32px;
     margin-bottom: 8px;
 
 }
@@ -579,9 +590,6 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        padding-left: 16px;
-        padding-bottom: 32px;
-
 }
 @media screen and (min-width: 768px) {
     .portfolio-list {
@@ -657,7 +665,6 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
 .bottom-text {
     max-width: 288px;
     margin-top: 16px;
@@ -681,7 +688,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -737,8 +744,6 @@ body {
     padding-left: 16px;
     color: #ffffff;
     margin-bottom: 16px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .footer-email-input::placeholder {
@@ -776,9 +781,11 @@ body {
 @media screen and (min-width: 768px) {
     .footer-column {
         flex-direction: row;
+        flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: first baseline;
     }
     .logo-bottom {
         margin-left: 0;
@@ -793,11 +800,21 @@ body {
         display: flex;
         gap: 24px;
     }
+    .footer-email-input {
+        margin-bottom: 0;
+    }
 @media screen and (min-width: 1158px) {
     .footer-column {
-        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 0px;
+        row-gap: 0px;
         align-items: baseline;
-        justify-content: space-between;
+    }
+    .bottom-container {
+        margin-right: 120px;
+    }
+    .footer-socials-container {
+        margin-right: 80px;
     }
 }
 }
