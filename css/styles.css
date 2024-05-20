@@ -285,7 +285,7 @@ body {
 .hero {
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office-min.jpg);
     background-size: cover;
     max-width: 320px;
     background-color: #2e2f42;
@@ -358,6 +358,11 @@ body {
     }
     .main-title {
         margin-bottom: 48px;
+    }
+}
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office@2x-min.jpg);
     }
 }
 /* ============ BENEFITS ============ */
