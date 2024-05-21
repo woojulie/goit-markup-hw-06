@@ -792,7 +792,8 @@ padding-top: 32px;
         row-gap: 72px;
         column-gap: 24px;
         align-items: baseline;
-        justify-content: first baseline;
+        justify-content: flex-start;
+        padding: 0 108px;
     }
     .logo-bottom {
         margin-left: 0;
@@ -816,6 +817,7 @@ padding-top: 32px;
         column-gap: 0px;
         row-gap: 0px;
         align-items: baseline;
+        padding: 0 15px;
     }
     .bottom-container {
         margin-right: 120px;
