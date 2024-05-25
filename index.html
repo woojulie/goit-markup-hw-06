@@ -131,65 +131,83 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="icons"
-                srcset="
-                  ./images/team/team-1-min.jpg    1x,
-                  ./images/team/team-1@2x-min.jpg 2x
-                "
-                src="./images/team/team-1-min.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
-              <div class="team-info">
-                <h3 class="team-list-title">Mark Guerrero</h3>
-                <p class="team-list-text">Product Designer</p>
-                <ul class="social-link-list">
-                  <li class="soc-links-item">
-                    <a
-                      class="soc-link"
-                      href="https://www.instagram.com/?hl=uk"
-                      target="_blank"
-                    >
-                      <svg class="social-list" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="soc-links-item">
-                    <a
-                      class="soc-link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                    >
-                      <svg class="social-list" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="soc-links-item">
-                    <a
-                      class="soc-link"
-                      href="https://uk-ua.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="social-list" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="soc-links-item">
-                    <a
-                      class="soc-link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="social-list" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="flip-card-container">
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="icons"
+                      srcset="
+                        ./images/team/team-1-min.jpg    1x,
+                        ./images/team/team-1@2x-min.jpg 2x
+                      "
+                      src="./images/team/team-1-min.jpg"
+                      alt="Mark Guerrero"
+                      width="264"
+                    />
+                  </div>
+                  <div class="back">
+                    <img
+                      class="icons"
+                      srcset="
+                        ./images/team/team-2-min.jpg    1x,
+                        ./images/team/team-2@2x-min.jpg 2x
+                      "
+                      src="./images/team/team-2-min.jpg"
+                      alt="Tom Ford"
+                      width="264"
+                    />
+                  </div>
+                </div>
+                <div class="team-info">
+                  <h3 class="team-list-title">Mark Guerrero</h3>
+                  <p class="team-list-text">Product Designer</p>
+                  <ul class="social-link-list">
+                    <li class="soc-links-item">
+                      <a
+                        class="soc-link"
+                        href="https://www.instagram.com/?hl=uk"
+                        target="_blank"
+                      >
+                        <svg class="social-list" width="16" height="16">
+                          <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="soc-links-item">
+                      <a
+                        class="soc-link"
+                        href="https://twitter.com/"
+                        target="_blank"
+                      >
+                        <svg class="social-list" width="16" height="16">
+                          <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="soc-links-item">
+                      <a
+                        class="soc-link"
+                        href="https://uk-ua.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="social-list" width="16" height="16">
+                          <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="soc-links-item">
+                      <a
+                        class="soc-link"
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                      >
+                        <svg class="social-list" width="16" height="16">
+                          <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="team-item">
@@ -388,38 +406,42 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="overlay-box">
-                <picture>
-                  <source
-                    media="(min-width: 1158px)"
-                    srcset="
-                      ./images/portfolio/portfolio-desk-1-min.jpg    1x,
-                      ./images/portfolio/portfolio-desk-1@2x-min.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/portfolio/portfolio-tab-1-min.jpg    1x,
-                      ./images/portfolio/portfolio-tab-1@2x-min.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="
-                      ./images/portfolio/portfolio-mob-1-min.jpg    1x,
-                      ./images/portfolio/portfolio-mob-1@2x-min.jpg 2x
-                    "
-                  />
-                  <img
-                    src="./images/portfolio/portfolio-desk-1-min.jpg"
-                    alt="Banking App"
-                  />
-                </picture>
-                <p class="overlay-content">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
-                </p>
+                <div class="flip-card-front">
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/portfolio/portfolio-desk-1-min.jpg    1x,
+                        ./images/portfolio/portfolio-desk-1@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-1-min.jpg    1x,
+                        ./images/portfolio/portfolio-tab-1@2x-min.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-1-min.jpg    1x,
+                        ./images/portfolio/portfolio-mob-1@2x-min.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-desk-1-min.jpg"
+                      alt="Banking App"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="overlay-content">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
               </div>
               <div class="container portfolio-container">
                 <h3 class="portfolio-title">Banking App</h3>
